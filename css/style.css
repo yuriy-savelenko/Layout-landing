@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans";
+  padding: 0;
+  margin: 0;
+}
+
+a,
+ul,
+li,
+button {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 20px 40px;
+  color: #FFFFFF;
+  background-color: #DD2242;
+  border-radius: 30px;
+  margin-left: 10%;
+}
+
+.container {
+  max-width: 1919px;
+  padding: 0 15px;
+}
+
+.hero {
+  background-image: url(../img/hero_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__title {
+  width: 40%;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 130px;
+  color: #FFFFFF;
+}
+.hero__btn {
+  margin-top: 20px;
+}
+.hero__bottom {
+  display: flex;
+  padding-top: 250px;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+}
+.hero__description_container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+}
+.hero__description_box {
+  justify-content: space-between;
+  padding: 40px;
+}
+.hero__text {
+  width: 70%;
+}
+
+.nav {
+  display: flex;
+  padding-top: 28px;
+}
+.nav__list {
+  display: flex;
+  padding-left: 62px;
+}
+.nav__link {
+  display: block;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.nav__list_item:not(:last-child) {
+  padding-right: 62px;
+}
+.nav__right {
+  margin-left: auto;
+}
+.nav__search {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+.burger {
+  position: relative;
+  left: -50px;
+  top: -26px;
+  cursor: pointer;
+}
+
+.burger-span {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+}
+
+.burger-span::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  top: 45%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateY(10px);
+}
+
+.burger-span::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background-color: #FFFFFF;
+  top: 5%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(5.5px);
+}/*# sourceMappingURL=style.css.map */
