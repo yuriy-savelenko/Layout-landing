@@ -4,8 +4,6 @@
 
 body {
   font-family: "DM Sans";
-  padding: 0;
-  margin: 0;
 }
 
 a,
@@ -31,7 +29,7 @@ h6 {
 .btn {
   cursor: pointer;
   padding: 20px 40px;
-  color: #FFFFFF;
+  color: white;
   background-color: #DD2242;
   border-radius: 30px;
   margin-left: 10%;
@@ -43,9 +41,10 @@ h6 {
 }
 
 .hero {
-  background-image: url(../img/hero_bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/hero_bg.jpg);
 }
 .hero__title {
   width: 40%;
@@ -55,7 +54,7 @@ h6 {
   font-weight: 900;
   font-size: 120px;
   line-height: 130px;
-  color: #FFFFFF;
+  color: white;
 }
 .hero__btn {
   margin-top: 20px;
@@ -70,7 +69,7 @@ h6 {
 .hero__description_container {
   display: flex;
   background-color: rgba(0, 0, 0, 0.4);
-  color: #FFFFFF;
+  color: white;
 }
 .hero__description_box {
   justify-content: space-between;
@@ -94,7 +93,7 @@ h6 {
   font-size: 18px;
   line-height: 23px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: white;
 }
 .nav__list_item:not(:last-child) {
   padding-right: 62px;
@@ -120,7 +119,7 @@ h6 {
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 
 .burger-span::after {
@@ -128,7 +127,7 @@ h6 {
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: white;
   top: 45%;
   left: 0;
   bottom: 0;
@@ -141,10 +140,141 @@ h6 {
   position: absolute;
   width: 25px;
   height: 3px;
-  background-color: #FFFFFF;
+  background-color: white;
   top: 5%;
   bottom: 0;
   left: 0;
   right: 0;
   transform: translateY(5.5px);
+}
+
+.info__top {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(rgba(1, 10, 32, 0.65) 0%, rgb(1, 10, 32) 100%), url(../img/info-bg.jpg);
+}
+.info__top_left {
+  background-image: url(../img/info-bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  width: 630px;
+  height: 460px;
+}
+.info__top_right {
+  padding-left: 130px;
+  width: 50%;
+}
+.info__top_title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  color: white;
+}
+.info__top_text {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  width: 70%;
+}
+
+.info__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(rgb(1, 10, 32) 0%, rgba(1, 10, 32, 0.65) 100%), url(../img/info-bg3.jpg);
+}
+.info__bottom_right {
+  background-image: url(../img/info-bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 630px;
+  height: 460px;
+  border-radius: 10px;
+}
+.info__bottom_left {
+  width: 50%;
+}
+.info__bottom_title {
+  width: 85%;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 50px;
+  color: white;
+}
+.info__bottom_text {
+  color: white;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  width: 70%;
+}
+
+.explore {
+  background-image: url(../img/explore-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1400px;
+}
+
+.explore__title {
+  padding-top: 65px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 150%;
+  color: rgb(1, 10, 32);
+}
+
+.swiper {
+  margin-top: 30px;
+  width: 1600px;
+  height: 300px;
+}
+
+.swiper-slide {
+  width: 400px;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.slide1 {
+  background-image: url(../img/slide1.jpg);
+}
+
+.slide2 {
+  background-image: url(../img/slide2.jpg);
+}
+
+.slide3 {
+  background-image: url(../img/slide3.jpg);
+}
+
+.slide4 {
+  background-image: url(../img/slide4.jpg);
+}
+
+.slide5 {
+  background-image: url(../img/slide5.jpg);
+}
+
+.slide6 {
+  background-image: url(../img/slide6.jpg);
 }/*# sourceMappingURL=style.css.map */
