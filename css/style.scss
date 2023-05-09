@@ -50,8 +50,9 @@ h6 {
 }
 
 .hero {
+    background: linear-gradient(rgb(0, 0, 0, .2)0, rgb(0, 0, 0, .2)100%), url(../img/hero_bg.jpg);
     @include backGround;
-    background-image: url(../img/hero_bg.jpg);
+
 
     &__title {
         width: 40%;
@@ -171,7 +172,6 @@ h6 {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 100px 200px;
     @include backGround;
     background: linear-gradient(rgba(1, 10, 32, .65) 0%, rgb(1, 10, 32, ) 100%), url(../img/info-bg.jpg);
@@ -201,7 +201,6 @@ h6 {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        width: 70%;
     }
 
 }
@@ -209,10 +208,10 @@ h6 {
 .info__bottom {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 100px 200px;
-    @include backGround;
     background: linear-gradient(rgb(1, 10, 32, ) 0%, rgba(1, 10, 32, .65) 100%), url(../img/info-bg3.jpg);
+    @include backGround;
+
 
     &_right {
         background-image: url(../img/info-bg2.jpg);
@@ -220,10 +219,6 @@ h6 {
         width: 630px;
         height: 460px;
         border-radius: 10px;
-    }
-
-    &_left {
-        width: 50%;
     }
 
     &_title {
@@ -239,14 +234,73 @@ h6 {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        width: 70%;
+        width: 78%;
     }
 }
 
 .explore {
     background-image: url(../img/explore-bg.jpg);
     @include backGround;
-    height: 1400px;
+    height: 1800px;
+
+    &__top {
+        padding-bottom: 800px;
+
+    }
+
+    &__bottom {
+        background: linear-gradient(rgb(1, 10, 32, ) 0%, rgba(1, 10, 32, .65) 100%);
+    }
+
+    &__numbers_top {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__numbers_title {
+        text-align: center;
+        color: $white-color;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+    }
+
+    &__numbers_text {
+        text-align: center;
+        margin-left: 26%;
+        width: 50%;
+        color: $white-color;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__numbers_number {
+        color: rgba(221, 34, 66, 1);
+        padding-left: 27%;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42.1375px;
+        line-height: 49px;
+    }
+
+    &__numbers_bottom {
+        display: flex;
+        padding-left: 50px;
+    }
+
+    &__numbers_descr {
+        width: 70%;
+        padding-bottom: 200px;
+        text-align: center;
+        color: $white-color;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
 }
 
 .explore__title {
@@ -284,13 +338,46 @@ h6 {
 }
 
 .slide4 {
-    background-image: url(../img/slide4.jpg);
+    background-image: url(../img/slide1.jpg);
 }
 
 .slide5 {
-    background-image: url(../img/slide5.jpg);
+    background-image: url(../img/slide2.jpg);
 }
 
 .slide6 {
-    background-image: url(../img/slide6.jpg);
+    background-image: url(../img/slide3.jpg);
+}
+
+.numbers {
+    background-image: url(../img/blue.jpg);
+
+
+
+}
+
+.valleys {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/valleys.png);
+    @include backGround;
+
+
+    &__title {
+        width: 50%;
+        text-align: center;
+        padding-top: 250px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba(111, 119, 135, 1);
+
+    }
 }
