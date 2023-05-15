@@ -49,6 +49,10 @@ h6 {
     padding: 0 15px;
 }
 
+.swiper .swiper-initialized .swiper-horizontal .swiper-backface-hidden {
+    width: 80%;
+}
+
 .hero {
     background: linear-gradient(rgb(0, 0, 0, .2)0, rgb(0, 0, 0, .2)100%), url(../img/hero_bg.jpg);
     @include backGround;
@@ -180,13 +184,11 @@ h6 {
         background-image: url(../img/info-bg1.jpg);
         @include backGround;
         border-radius: 10px;
-        width: 630px;
-        height: 460px;
+        width: 100%;
     }
 
     &_right {
         padding-left: 130px;
-        width: 50%;
     }
 
     &_title {
@@ -207,22 +209,22 @@ h6 {
 
 .info__bottom {
     display: flex;
-    flex-direction: row;
     padding: 100px 200px;
     background: linear-gradient(rgb(1, 10, 32, ) 0%, rgba(1, 10, 32, .65) 100%), url(../img/info-bg3.jpg);
     @include backGround;
 
+    &_left {
+        padding-right: 10%;
+    }
 
     &_right {
+        width: 100%;
         background-image: url(../img/info-bg2.jpg);
         @include backGround;
-        width: 630px;
-        height: 460px;
         border-radius: 10px;
     }
 
     &_title {
-        width: 85%;
         font-weight: 700;
         font-size: 42px;
         line-height: 50px;
@@ -234,7 +236,6 @@ h6 {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
-        width: 78%;
     }
 }
 
@@ -249,7 +250,10 @@ h6 {
     }
 
     &__bottom {
+        margin-top: 690px;
+        padding-top: 50px;
         background: linear-gradient(rgb(1, 10, 32, ) 0%, rgba(1, 10, 32, .65) 100%);
+        @include backGround;
     }
 
     &__numbers_top {
@@ -301,20 +305,26 @@ h6 {
         font-size: 18px;
         line-height: 28px;
     }
-}
 
-.explore__title {
-    padding-top: 65px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 150%;
-    color: rgba(1, 10, 32, 1);
+    &__title {
+        padding-top: 65px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 150%;
+        color: rgba(1, 10, 32, 1);
+    }
+
+    &__container {
+        padding: 0;
+        margin: 0;
+    }
+
 }
 
 .swiper {
     margin-top: 30px;
-    width: 1600px;
+    width: 90%;
     height: 300px;
 }
 
