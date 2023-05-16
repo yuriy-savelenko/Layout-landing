@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="hero__video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BFS9n4B_2xA"
+                        <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/BFS9n4B_2xA"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
@@ -161,38 +161,40 @@
             </div>
         </section>
         <section class="section valleys">
-            <div class="container">
-                <h2 class="subtitle valleys__title">Our hills and valleys are like nothing you’ve seen.</h2>
-                <p class="valleys__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
-                    magna
-                    commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
-                <button class="btn valleys__btn">Learn More</button>
+            <div class="container valleys__container">
+                <div class="valleys__box">
+                    <h2 class="subtitle valleys__title">Our hills and valleys are like nothing you’ve seen.</h2>
+                    <p class="valleys__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet
+                        magna
+                        commodo, tempus dolor sit amet, laoreet elit. Donec mauris tortor.</p>
+                    <button class="btn valleys__btn">Learn More</button>
+                </div>
+                <div class="valleys__left"></div>
+                <div class="valleys__right"></div>
             </div>
         </section>
         <section class="section life">
-            <div class="container">
+            <div class="container life__container">
                 <h2 class="subtitle life__title">
                     Live a life like you wouldn’t imagine, experience a life you wouldn’t expect.
                 </h2>
-                <div class="valleys__video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ZWls3Zt9C2M"
+                <div class="life__video">
+                    <iframe class="iframe" width="1000" height="500" src="https://www.youtube.com/embed/ZWls3Zt9C2M"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>
-                <div class="valleys__bottom">
-                    <div class="valleys__box">
-                        <div class="valleys__picture"></div>
-                        <p class="valleys__text">In The Country</p>
-                        <p class="valleys__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <div class="life__bottom">
+                    <div class="life__box">
+                        <p class="life__text">In The Country</p>
+                        <p class="life__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus
                             dapibus
                             mauris in lectus tempus.</p>
                     </div>
-                    <div class="valleys__box">
-                        <div class="valleys__picture"></div>
-                        <p class="valleys__text">In The City</p>
-                        <p class="valleys__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <div class="life__box">
+                        <p class="life__text">In The City</p>
+                        <p class="life__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus
                             dapibus
                             mauris in lectus tempus.</p>
@@ -202,36 +204,37 @@
         </section>
         <section class="section gallery">
             <div class="container">
-                <div class="gallery__top">
-                    <h2 class="subtitle gallery__title">Photo Gallery</h2>
-                    <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-                        dapibus
-                        mauris in lectus tempus, eget tincidunt.</p>
-                </div>
-                <div class="gallery__grid_container"></div>
+                <h2 class="subtitle gallery__title">Photo Gallery</h2>
+                <p class="gallery__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+                    dapibus
+                    mauris in lectus tempus, eget tincidunt.</p>
+                <div class="gallery__picture"></div>
             </div>
         </section>
         <section class="section getting">
             <div class="container">
-                <h2 class="subtitle">Getting there</h2>
+                <h2 class="getting__title">Getting there</h2>
                 <div class="getting__container">
-                    <p class="getting__booking">Bookings your flights</p>
+                    <p class="getting__subtitle">Bookings your flights</p>
+                    <p class="getting_number number1">1</p>
                     <p class="getting__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
                         dapibus
                         mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus
                         malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
-                    <p class="getting__booking">Choosing your hotel</p>
+                    <p class="getting__subtitle">Choosing your hotel</p>
+                    <p class="getting_number number2">2</p>
                     <p class="getting__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
                         dapibus
                         mauris in lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus
                         malesuada. Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
-                    <div class="getting__info_box">
-                        <div class="getting__info_img"></div>
-                        <p class="getting__info_text">Travelling there</p>
-                        <p class="getting__info_descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <div class="getting__box">
+                        <div class="getting__box_img"></div>
+                        <p class="getting__box_subtitle">Travelling there</p>
+                        <p class="getting__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
                     </div>
-                    <p class="getting__booking">Planning your experiences</p>
+                    <p class="getting__subtitle">Planning your experiences</p>
+                    <p class="getting_number number3">3</p>
                     <p class="getting__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
                         dapibus
                         mauris in lectus tempus, eget tincidunt lacus varius. </p>
@@ -241,7 +244,7 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__logo">
                 <svg width="174" height="66" viewBox="0 0 174 66" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_12_353)">
@@ -261,21 +264,21 @@
                         </clipPath>
                     </defs>
                 </svg>
-                <div class="footer__list_box">
-                    <ul class="footer__list">
-                        <li class="footer__list_item"><a href="#" class="footer__list_link">About</a></li>
-                        <li class="footer__list_item"><a href="#" class="footer__list_link">Pricing</a></li>
-                        <li class="footer__list_item"><a href="#" class="footer__list_link">Company</a></li>
-                        <li class="footer__list_item"><a href="#" class="footer__list_link">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="footer__social">
-                    <a href="#" class="footer__social_link">f</a>
-                    <a href="#" class="footer__social_link">in</a>
-                    <a href="#" class="footer__social_link">g</a>
-                </div>
-                <div class="footer__copyright">Copyright © 2019</div>
             </div>
+            <div class="footer__list_box">
+                <ul class="footer__list">
+                    <li class="footer__list_item"><a href="#" class="footer__list_link">About</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_link">Pricing</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_link">Company</a></li>
+                    <li class="footer__list_item"><a href="#" class="footer__list_link">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__social">
+                <a href="#" class="footer__social_link">f</a>
+                <a href="#" class="footer__social_link">in</a>
+                <a href="#" class="footer__social_link">g</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2019</div>
         </div>
     </footer>
 </body>

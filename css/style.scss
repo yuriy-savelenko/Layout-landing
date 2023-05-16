@@ -4,7 +4,11 @@
     background-position: center;
 }
 
+$gap: 2rem;
+
 $white-color: white;
+$dark-blue-color: rgb(1, 10, 32);
+;
 
 * {
     box-sizing: border-box;
@@ -41,7 +45,14 @@ h6 {
     color: $white-color;
     background-color: #DD2242;
     border-radius: 30px;
-    margin-left: 10%;
+}
+
+.bnt:focus-visible {
+    outline: none;
+}
+
+.btn:focus {
+    outline: none;
 }
 
 .container {
@@ -49,8 +60,9 @@ h6 {
     padding: 0 15px;
 }
 
-.swiper .swiper-initialized .swiper-horizontal .swiper-backface-hidden {
-    width: 80%;
+.iframe {
+    border-radius: 10px;
+
 }
 
 .hero {
@@ -70,7 +82,7 @@ h6 {
     }
 
     &__btn {
-        margin-top: 20px;
+        margin-left: 10%;
     }
 
     &__bottom {
@@ -83,8 +95,10 @@ h6 {
 
     &__description_container {
         display: flex;
-        background-color: rgb(0, 0, 0, .4);
+        background-color: rgb(1, 10, 32, .4);
+        ;
         color: $white-color;
+        border-radius: 10px;
     }
 
     &__description_box {
@@ -178,17 +192,18 @@ h6 {
     flex-direction: row;
     padding: 100px 200px;
     @include backGround;
-    background: linear-gradient(rgba(1, 10, 32, .65) 0%, rgb(1, 10, 32, ) 100%), url(../img/info-bg.jpg);
+    background: linear-gradient(rgba(1, 10, 32, .65) 0%, rgb(1, 10, 32) 100%), url(../img/info-bg.jpg);
 
     &_left {
+        width: 50%;
         background-image: url(../img/info-bg1.jpg);
         @include backGround;
         border-radius: 10px;
-        width: 100%;
     }
 
     &_right {
-        padding-left: 130px;
+        padding-left: 10%;
+        text-align: center;
     }
 
     &_title {
@@ -199,6 +214,7 @@ h6 {
     }
 
     &_text {
+        margin: $gap;
         color: $white-color;
         font-weight: 400;
         font-size: 18px;
@@ -214,11 +230,12 @@ h6 {
     @include backGround;
 
     &_left {
+        text-align: center;
         padding-right: 10%;
     }
 
     &_right {
-        width: 100%;
+        width: 50%;
         background-image: url(../img/info-bg2.jpg);
         @include backGround;
         border-radius: 10px;
@@ -232,6 +249,7 @@ h6 {
     }
 
     &_text {
+        margin: $gap;
         color: $white-color;
         font-weight: 400;
         font-size: 18px;
@@ -242,7 +260,6 @@ h6 {
 .explore {
     background-image: url(../img/explore-bg.jpg);
     @include backGround;
-    height: 1800px;
 
     &__top {
         padding-bottom: 800px;
@@ -252,7 +269,7 @@ h6 {
     &__bottom {
         margin-top: 690px;
         padding-top: 50px;
-        background: linear-gradient(rgb(1, 10, 32, ) 0%, rgba(1, 10, 32, .65) 100%);
+        background: linear-gradient(rgb(1, 10, 32) 0%, rgba(1, 10, 32, .65) 100%);
         @include backGround;
     }
 
@@ -307,7 +324,7 @@ h6 {
     }
 
     &__title {
-        padding-top: 65px;
+        padding: 60px 0;
         text-align: center;
         font-weight: 700;
         font-size: 50px;
@@ -334,6 +351,25 @@ h6 {
     @include backGround;
     border-radius: 10px;
 }
+
+@keyframes anim {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(5px);
+    }
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after,
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    color: $white-color;
+    animation: anim .2s ease infinite alternate;
+}
+
 
 .slide1 {
     background-image: url(../img/slide1.jpg);
@@ -367,14 +403,21 @@ h6 {
 }
 
 .valleys {
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/valleys.png);
-    @include backGround;
+    position: relative;
 
+    &__container {
+        display: flex;
+    }
+
+    &__box {
+        position: absolute;
+        width: 40%;
+        left: 29%;
+        padding-bottom: 250px;
+        text-align: center;
+    }
 
     &__title {
-        width: 50%;
         text-align: center;
         padding-top: 250px;
         font-style: normal;
@@ -384,10 +427,254 @@ h6 {
     }
 
     &__text {
+        margin: $gap;
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
         color: rgba(111, 119, 135, 1);
 
+    }
+
+    &__left {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 820px;
+        top: 0;
+        background: url(../img/valleys.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__right {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 820px;
+        background: url(../img/valleys2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+}
+
+.life {
+    &__container {
+        background: linear-gradient(rgba(1, 10, 32, 0.65) 0%, rgba(1, 10, 32, .65) 100%), url(../img/life.jpg);
+        @include backGround;
+    }
+
+    &__top {
+        width: 80%;
+    }
+
+    &__title {
+        padding: 100px 405px;
+        text-align: center;
+        color: $white-color;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    &__video {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__box {
+        flex-direction: column;
+        padding: 0 250px;
+        margin: 100px 0 100px 50px;
+        background-image: url(../img/life.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+        border-radius: 10px;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: $white-color;
+    }
+
+    &__descr {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: rgba($color: $white-color, $alpha: .5);
+    }
+
+}
+
+.gallery {
+
+    padding-bottom: 150px;
+
+    &__title {
+        padding-top: 180px;
+        color: $dark-blue-color;
+        text-align: center;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+    }
+
+    &__text {
+        text-align: center;
+        margin: $gap;
+        padding: 0 550px;
+        color: rgb(51, 51, 51, .7);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__picture {
+        background-image: url(../img/gallery.jpg);
+        @include backGround;
+        height: 100vh;
+        margin: 0 250px;
+        border-radius: 10px;
+    }
+}
+
+.getting {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: rgba(220, 232, 242, 1);
+
+    &__container {
+        padding: 0 450px 100px 450px;
+
+    }
+
+    &__title {
+        color: $dark-blue-color;
+        padding: 71px 0 10px 20%;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 150%;
+    }
+
+    &__title::after {
+        content: '';
+        position: absolute;
+        left: 22%;
+        width: 2px;
+        height: 54%;
+        bottom: 27%;
+        background-color: rgba(21, 20, 57, 0.4);
+
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 26.4091px;
+        line-height: 41px;
+    }
+
+    &__subtitle::after {
+        content: '';
+        position: absolute;
+        left: 20.5%;
+        width: 60px;
+        height: 60px;
+        background-color: #DD2242;
+        border-radius: 50%;
+        transform: translateY(-10px);
+    }
+
+    &__box_subtitle {
+        font-weight: 700;
+        font-size: 26.4091px;
+        line-height: 41px;
+        padding-bottom: 35px;
+    }
+
+    &__box {
+        padding: 0 0 0 450px;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23.4747px;
+        line-height: 38px;
+        color: rgba(21, 20, 57, 0.4);
+    }
+
+    &_number {
+        position: absolute;
+        color: white;
+        font-size: 32px;
+    }
+
+    &__box_img {
+        position: absolute;
+        width: 19%;
+        height: 17%;
+        left: 29%;
+        top: 52.5%;
+        background-image: url(../img/getting.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+    }
+
+}
+
+.number1 {
+    left: 21.8%;
+    top: 14.2%;
+}
+
+.number2 {
+    left: 21.6%;
+    top: 31.7%;
+}
+
+.number3 {
+    left: 21.6%;
+    top: 70%;
+}
+
+.footer {
+    background-color: $dark-blue-color;
+    padding: $gap;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__list_link {
+        color: $white-color;
+        padding-left: 30px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &__social_link {
+        color: $white-color;
+        padding-left: 30px;
+        font-size: 25px;
+    }
+
+    &__copyright {
+        color: $white-color;
     }
 }
